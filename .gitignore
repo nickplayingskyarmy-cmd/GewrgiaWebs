@@ -1,0 +1,6 @@
+# Εξαρτήσεις Node (μόνο για το build του Tailwind CSS)
+node_modules/
+
+# Αρχεία συστήματος
+.DS_Store
+Thumbs.db

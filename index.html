@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ================================================================
+       ΓΕΩΡΓΙΑ — PORTFOLIO
+       Social Media Content Creator & Graphic Designer
+       ----------------------------------------------------------------
+       ✏️  Ό,τι σημείο μπορεί να αλλάξει εύκολα, είναι μαρκαρισμένο
+           με σχόλιο:  ✏️ ΑΛΛΑΞΕ ΕΔΩ
+       📸  Οι εικόνες του portfolio φορτώνονται ΑΥΤΟΜΑΤΑ από τους
+           φακέλους /images/... — δες το README.md για οδηγίες.
+       ================================================================ -->
+
+  <title>Γεωργία — Social Media Content Creator | Portfolio</title>
+  <meta name="description" content="Η Γεωργία δημιουργεί εντυπωσιακό περιεχόμενο για Instagram & TikTok που βοηθά επιχειρήσεις να αναπτύξουν την online παρουσία τους.">
+  <meta property="og:title" content="Γεωργία — Social Media Content Creator">
+  <meta property="og:description" content="Δημιουργία περιεχομένου για Instagram & TikTok. Βοηθάω επιχειρήσεις να ξεχωρίσουν στα social media.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (μονόγραμμα «Γ» σε ροζ) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230F0F0F'/%3E%3Ctext x='50' y='72' font-family='Arial' font-size='62' font-weight='800' fill='%23FF4FA3' text-anchor='middle'%3E%CE%93%3C/text%3E%3C/svg%3E">
+
+  <!-- Γραμματοσειρές (τοπικά αρχεία — Montserrat για λατινικά, Manrope για ελληνικά) -->
+  <link rel="preload" as="font" type="font/woff2" href="fonts/montserrat-latin-800-normal.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/manrope-greek-800-normal.woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <!-- Tailwind CSS (τοπικό, προ-χτισμένο αρχείο — δες README για rebuild) -->
+  <link rel="stylesheet" href="css/tailwind.css">
+
+  <!-- Δικά μας styles (animations, lightbox, effects) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-ink text-offwhite font-sans antialiased overflow-x-hidden selection:bg-brand selection:text-white">
+
+  <!-- Link προσβασιμότητας -->
+  <a href="#hero" class="skip-link">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- ================================================================
+       SVG SPRITE — όλα τα εικονίδια της σελίδας σε ένα σημείο
+       ================================================================ -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+    <defs>
+      <!-- Instagram -->
+      <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><line x1="17.3" y1="6.7" x2="17.3" y2="6.7" stroke-width="2.6"/>
+      </symbol>
+      <!-- TikTok / μουσική νότα -->
+      <symbol id="i-tiktok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18.5V5.5l11-2.2v12.4"/><circle cx="6" cy="18.5" r="3"/><circle cx="17" cy="15.7" r="3"/>
+      </symbol>
+      <!-- Email -->
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3.5 7.5 8.5 6 8.5-6"/>
+      </symbol>
+      <!-- Τηλέφωνο -->
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </symbol>
+      <!-- Τοποθεσία -->
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.5 10.2c0 6.2-8.5 11.6-8.5 11.6S3.5 16.4 3.5 10.2a8.5 8.5 0 0 1 17 0z"/><circle cx="12" cy="10.2" r="3"/>
+      </symbol>
+      <!-- Check -->
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6.5 9.5 17 4 11.5"/>
+      </symbol>
+      <!-- Αστέρι 4 ακτίνων (διακοσμητικό) -->
+      <symbol id="i-spark" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/>
+      </symbol>
+      <!-- Sparkles -->
+      <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 4l1.7 5.3L18 11l-5.3 1.7L11 18l-1.7-5.3L4 11l5.3-1.7z"/><path d="M19 3v4M17 5h4M19.5 16v4M17.5 18h4"/>
+      </symbol>
+      <!-- Κεραυνός -->
+      <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+      </symbol>
+      <!-- Μάτι -->
+      <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>
+      </symbol>
+      <!-- Διαμάντι -->
+      <symbol id="i-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 3.5h10l4.5 6L12 20.5 2.5 9.5z"/><path d="M2.5 9.5h19"/><path d="M8 9.5 12 20.5 16 9.5"/>
+      </symbol>
+      <!-- Καρδιά -->
+      <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+      </symbol>
+      <!-- Συνομιλία -->
+      <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </symbol>
+      <!-- Πένα σχεδίασης -->
+      <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/>
+      </symbol>
+      <!-- Βραβείο -->
+      <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8.5" r="6"/><path d="M8.8 13.5 7.5 22l4.5-2.7L16.5 22l-1.3-8.5"/>
+      </symbol>
+      <!-- Στόχος -->
+      <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8"/>
+      </symbol>
+      <!-- Φωτογραφική μηχανή -->
+      <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>
+      </symbol>
+      <!-- Μεγεθυντικός φακός (zoom) -->
+      <symbol id="i-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8.5 11h5M11 8.5v5"/>
+      </symbol>
+      <!-- Βέλη / πλοήγηση -->
+      <symbol id="i-chev-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></symbol>
+      <symbol id="i-chev-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-arrow-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V4M5 11l7-7 7 7"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ================================================================
+       NAVBAR — σταθερό μενού με glassmorphism
+       ================================================================ -->
+  <header id="site-nav" class="fixed top-0 inset-x-0 z-[100] transition-all duration-500">
+    <!-- Μπάρα προόδου scroll -->
+    <div id="scroll-progress" class="absolute top-0 left-0 h-[3px] w-0 bg-gradient-to-r from-brand-dark via-brand to-brand-soft rounded-r-full"></div>
+
+    <nav class="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between h-20 transition-all duration-500" aria-label="Κύριο μενού">
+      <!-- Λογότυπο -->
+      <a href="#hero" class="text-2xl font-extrabold tracking-tight text-white">
+        Γεωργία<span class="text-brand">.</span>
+      </a>
+
+      <!-- Σύνδεσμοι (desktop) -->
+      <ul class="hidden lg:flex items-center gap-9 text-sm font-medium">
+        <li><a class="nav-link" href="#hero" data-target="hero">Αρχική</a></li>
+        <li><a class="nav-link" href="#about" data-target="about">Σχετικά</a></li>
+        <li><a class="nav-link" href="#portfolio" data-target="portfolio">Portfolio</a></li>
+        <li><a class="nav-link" href="#skills" data-target="skills">Δεξιότητες</a></li>
+        <li><a class="nav-link" href="#why" data-target="why">Γιατί Εμένα</a></li>
+        <li><a class="nav-link" href="#contact" data-target="contact">Επικοινωνία</a></li>
+      </ul>
+
+      <!-- CTA (μόνο σε desktop) -->
+      <div class="hidden lg:block">
+        <a href="#contact" class="btn-primary btn-sm">Ας Συνεργαστούμε</a>
+      </div>
+
+      <!-- Κουμπί μενού (mobile) -->
+      <button id="menu-toggle" class="hamburger lg:hidden" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Μενού πλήρους οθόνης (mobile) -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden" aria-hidden="true">
+    <nav aria-label="Μενού κινητού">
+      <ul class="flex flex-col items-center gap-7 text-2xl font-bold">
+        <li><a class="mobile-link" href="#hero">Αρχική</a></li>
+        <li><a class="mobile-link" href="#about">Σχετικά</a></li>
+        <li><a class="mobile-link" href="#portfolio">Portfolio</a></li>
+        <li><a class="mobile-link" href="#skills">Δεξιότητες</a></li>
+        <li><a class="mobile-link" href="#why">Γιατί Εμένα</a></li>
+        <li><a class="mobile-link" href="#contact">Επικοινωνία</a></li>
+      </ul>
+      <a href="#contact" class="btn-primary mobile-link mt-10">Ας Συνεργαστούμε</a>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ==============================================================
+         HERO — η πρώτη εντύπωση
+         ============================================================== -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+      <!-- Διακοσμητικές «σφαίρες» φωτός -->
+      <div class="orb w-[34rem] h-[34rem] -top-40 -right-52 opacity-25"></div>
+      <div class="orb w-[26rem] h-[26rem] bottom-0 -left-48 opacity-15"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-2 gap-16 lg:gap-20 items-center w-full">
+
+        <!-- ▸ Αριστερά: πορτρέτο -->
+        <div class="reveal relative w-full max-w-sm sm:max-w-md mx-auto lg:max-w-none">
+          <div class="portrait-shell shadow-card">
+            <div class="portrait-frame">
+              <!-- 📸 Το πορτρέτο φορτώνεται αυτόματα από images/profile/georgia.jpg -->
+              <img id="hero-photo" class="hidden absolute inset-0 w-full h-full object-cover" alt="Πορτρέτο της Γεωργίας" fetchpriority="high">
+
+              <!-- Κομψό placeholder μέχρι να προστεθεί φωτογραφία -->
+              <div id="hero-photo-placeholder" class="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-gradient-to-br from-[#1e1a20] via-[#181218] to-[#251325]">
+                <svg class="w-6 h-6 text-brand/70 spark-spin" aria-hidden="true"><use href="#i-spark"/></svg>
+                <span class="monogram">Γ</span>
+                <div class="flex items-center gap-2 text-white/40 text-xs tracking-[0.3em] uppercase">
+                  <svg class="w-4 h-4" aria-hidden="true"><use href="#i-camera"/></svg>
+                  Γεωργία · Content Creator
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Αιωρούμενες ετικέτες -->
+          <div class="float-chip glass absolute -left-3 sm:-left-8 top-10" aria-hidden="true">
+            <svg class="w-4 h-4 text-brand"><use href="#i-instagram"/></svg> Instagram Posts
+          </div>
+          <div class="float-chip glass absolute -right-3 sm:-right-8 top-1/2" style="animation-delay:1.6s" aria-hidden="true">
+            <svg class="w-4 h-4 text-brand"><use href="#i-tiktok"/></svg> TikTok Content
+          </div>
+          <div class="float-chip glass absolute left-6 -bottom-5" style="animation-delay:3s" aria-hidden="true">
+            <svg class="w-4 h-4 text-brand"><use href="#i-spark"/></svg> Δημιουργικό Branding
+          </div>
+        </div>
+
+        <!-- ▸ Δεξιά: κείμενο -->
+        <div class="text-center lg:text-left">
+          <p class="kicker justify-center lg:justify-start reveal">Portfolio · Δημιουργός Περιεχομένου</p>
+
+          <h1 class="reveal mt-5 font-extrabold leading-[0.95] text-[clamp(3.8rem,10vw,7.5rem)] tracking-tight text-white" data-delay="80">
+            Γεωργία<span class="text-brand">.</span>
+          </h1>
+
+          <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: τίτλοι ρόλου -->
+          <p class="reveal mt-6 text-xl md:text-2xl font-bold text-white" data-delay="160">
+            Δημιουργός Περιεχομένου Social Media
+          </p>
+          <p class="reveal mt-1 text-base md:text-lg font-semibold text-brand" data-delay="200">
+            Σχεδιάστρια Περιεχομένου για Instagram &amp; TikTok
+          </p>
+
+          <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: σύντομη παρουσίαση -->
+          <p class="reveal mt-6 text-white/65 leading-relaxed max-w-xl mx-auto lg:mx-0" data-delay="240">
+            Βοηθάω επιχειρήσεις να αναπτυχθούν μέσα από εντυπωσιακό περιεχόμενο στα social media,
+            που τραβάει την προσοχή, χτίζει αλληλεπίδραση και ενισχύει την online παρουσία τους.
+          </p>
+
+          <!-- Σημεία-κλειδιά -->
+          <ul class="reveal mt-8 grid sm:grid-cols-2 gap-3 max-w-xl mx-auto lg:mx-0 text-sm font-medium text-left" data-delay="300">
+            <li class="hero-point"><svg class="w-4 h-4"><use href="#i-check"/></svg> 20 ετών</li>
+            <li class="hero-point"><svg class="w-4 h-4"><use href="#i-check"/></svg> Πάθος για το Social Media Design</li>
+            <li class="hero-point"><svg class="w-4 h-4"><use href="#i-check"/></svg> Δημιουργία Instagram &amp; TikTok Posts</li>
+            <li class="hero-point"><svg class="w-4 h-4"><use href="#i-check"/></svg> Δημιουργικό Branding</li>
+          </ul>
+
+          <!-- Κουμπιά CTA -->
+          <div class="reveal mt-10 flex flex-wrap gap-4 justify-center lg:justify-start" data-delay="360">
+            <a href="#portfolio" class="btn-primary">
+              Δες τη Δουλειά μου
+              <svg class="w-4 h-4" aria-hidden="true"><use href="#i-arrow-r"/></svg>
+            </a>
+            <a href="#contact" class="btn-ghost">Επικοινώνησε μαζί μου</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ένδειξη scroll -->
+      <a href="#about" class="scroll-hint" aria-label="Κύλιση προς τα κάτω">
+        <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+      </a>
+    </section>
+
+    <!-- Κινούμενη «κορδέλα» με λέξεις-κλειδιά -->
+    <div class="ribbon border-y border-white/5 bg-surface/60" aria-hidden="true">
+      <div class="marquee" data-marquee>
+        <div class="marquee-track">
+          <div class="marquee-group ribbon-text">
+            <span>Instagram Posts</span><svg class="w-5 h-5 text-brand"><use href="#i-spark"/></svg>
+            <span>TikTok Content</span><svg class="w-5 h-5 text-brand"><use href="#i-spark"/></svg>
+            <span>Social Media Design</span><svg class="w-5 h-5 text-brand"><use href="#i-spark"/></svg>
+            <span>Branding</span><svg class="w-5 h-5 text-brand"><use href="#i-spark"/></svg>
+            <span>Δημιουργικό Περιεχόμενο</span><svg class="w-5 h-5 text-brand"><use href="#i-spark"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============================================================
+         ΣΧΕΤΙΚΑ — About Me
+         ============================================================== -->
+    <section id="about" class="relative py-24 md:py-32 overflow-hidden">
+      <div class="orb w-[28rem] h-[28rem] top-24 -right-56 opacity-15"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+          <!-- ▸ Κείμενο -->
+          <div>
+            <p class="kicker reveal">Γνώρισέ με</p>
+            <h2 class="section-title reveal mt-4" data-delay="80">
+              Σχετικά με <span class="gradient-text">εμένα</span>
+            </h2>
+
+            <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: κείμενα «Σχετικά» (placeholder — μπορούν να αλλάξουν) -->
+            <div class="mt-8 space-y-5 text-white/65 leading-relaxed">
+              <p class="reveal" data-delay="120">
+                Όλα ξεκίνησαν από την αγάπη μου για τη δημιουργία. Ανακάλυψα τον κόσμο του
+                graphic design στα εφηβικά μου χρόνια και από τότε δεν σταμάτησα να μαθαίνω,
+                να πειραματίζομαι και να εξελίσσομαι — από τα πρώτα μου σχέδια στο Canva,
+                μέχρι επαγγελματικές δημιουργίες στο Photoshop και το Illustrator.
+              </p>
+              <p class="reveal" data-delay="180">
+                Τα social media είναι το πάθος μου. Πιστεύω πως κάθε επιχείρηση έχει μια μοναδική
+                ιστορία να διηγηθεί — κι εγώ είμαι εδώ για να τη μετατρέψω σε περιεχόμενο που
+                ξεχωρίζει. Κάθε post που δημιουργώ συνδυάζει αισθητική, στρατηγική και φαντασία.
+              </p>
+              <p class="reveal" data-delay="240">
+                Συνεργάζομαι με επιχειρήσεις κάθε είδους και τις βοηθάω να χτίσουν μια δυνατή
+                online παρουσία, να αυξήσουν την αλληλεπίδρασή τους και να κερδίσουν την
+                εμπιστοσύνη του κοινού τους — ένα scroll τη φορά.
+              </p>
+            </div>
+
+            <p class="reveal mt-8 font-bold text-white flex items-center gap-2" data-delay="280">
+              — Γεωργία <svg class="w-4 h-4 text-brand" aria-hidden="true"><use href="#i-spark"/></svg>
+            </p>
+          </div>
+
+          <!-- ▸ Κάρτα με ρητό + στατιστικά -->
+          <div class="relative">
+            <div class="orb w-72 h-72 -top-10 -left-10 opacity-20"></div>
+            <figure class="glass relative rounded-[2rem] p-8 md:p-12 reveal shadow-card" data-delay="150">
+              <span class="text-7xl leading-none font-extrabold text-brand/90 select-none" aria-hidden="true">“</span>
+              <blockquote class="mt-2 text-xl md:text-2xl font-semibold leading-snug text-white">
+                Ο σχεδιασμός δεν είναι μόνο το πώς φαίνεται κάτι —
+                είναι το συναίσθημα που αφήνει.
+              </blockquote>
+
+              <div class="mt-10 pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-center">
+                <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: στατιστικά (placeholder) -->
+                <div>
+                  <p class="text-3xl md:text-4xl font-extrabold text-brand">6+</p>
+                  <p class="mt-1 text-[0.7rem] uppercase tracking-widest text-white/50">Κατηγορίες Projects</p>
+                </div>
+                <div>
+                  <p class="text-3xl md:text-4xl font-extrabold text-brand">45+</p>
+                  <p class="mt-1 text-[0.7rem] uppercase tracking-widest text-white/50">Δημιουργίες</p>
+                </div>
+                <div>
+                  <p class="text-3xl md:text-4xl font-extrabold text-brand">100%</p>
+                  <p class="mt-1 text-[0.7rem] uppercase tracking-widest text-white/50">Μεράκι</p>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <!-- ▸ Επιχειρήσεις -->
+        <div class="mt-24 md:mt-28">
+          <h3 class="reveal text-center text-2xl md:text-3xl font-extrabold text-white">
+            Επιχειρήσεις με τις οποίες <span class="gradient-text">έχω συνεργαστεί</span>
+          </h3>
+
+          <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: βάλε τα πραγματικά ονόματα των επιχειρήσεων -->
+          <div class="marquee mt-10 reveal" data-marquee data-delay="120">
+            <div class="marquee-track">
+              <div class="marquee-group">
+                <span class="brand-pill"><svg class="w-3.5 h-3.5 text-brand"><use href="#i-spark"/></svg> Επιχείρηση 1</span>
+                <span class="brand-pill"><svg class="w-3.5 h-3.5 text-brand"><use href="#i-spark"/></svg> Επιχείρηση 2</span>
+                <span class="brand-pill"><svg class="w-3.5 h-3.5 text-brand"><use href="#i-spark"/></svg> Επιχείρηση 3</span>
+                <span class="brand-pill"><svg class="w-3.5 h-3.5 text-brand"><use href="#i-spark"/></svg> Επιχείρηση 4</span>
+                <span class="brand-pill"><svg class="w-3.5 h-3.5 text-brand"><use href="#i-spark"/></svg> Επιχείρηση 5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         PORTFOLIO — 6 κατηγορίες με αυτόματα galleries
+         ============================================================== -->
+    <section id="portfolio" class="relative py-24 md:py-32 bg-[#121212] border-y border-white/5 overflow-hidden">
+      <div class="orb w-[30rem] h-[30rem] -top-40 left-1/3 opacity-10"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
+        <!-- Επικεφαλίδα ενότητας -->
+        <div class="text-center max-w-2xl mx-auto">
+          <p class="kicker justify-center reveal">Η δουλειά μου</p>
+          <h2 class="section-title reveal mt-4" data-delay="80">Portfolio</h2>
+          <p class="reveal mt-5 text-white/60 leading-relaxed" data-delay="140">
+            Μια επιλογή από τα αγαπημένα μου projects — σχεδιασμένα για Instagram &amp; TikTok.
+            Κάνε κλικ σε οποιοδήποτε post για να το δεις σε μεγέθυνση.
+          </p>
+        </div>
+
+        <div class="mt-20 md:mt-24 space-y-24 md:space-y-32">
+
+          <!-- ▸ Κατηγορία 01 — Fast Food -->
+          <article class="portfolio-category" id="cat-fastfood">
+            <div class="cat-header reveal">
+              <span class="cat-number" aria-hidden="true">01</span>
+              <div>
+                <h3 class="cat-title">Fast Food</h3>
+                <p class="cat-desc">Λαχταριστά posts για burgers, πίτσες και street food — σχέδια που ανοίγουν την όρεξη.</p>
+              </div>
+            </div>
+            <!-- 📸 Οι εικόνες φορτώνονται αυτόματα από τον φάκελο images/fastfood/ -->
+            <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
+                 data-folder="images/fastfood" data-title="Fast Food" data-placeholders="8"></div>
+          </article>
+
+          <!-- ▸ Κατηγορία 02 — Matcha -->
+          <article class="portfolio-category" id="cat-matcha">
+            <div class="cat-header cat-header-right reveal">
+              <span class="cat-number" aria-hidden="true">02</span>
+              <div>
+                <h3 class="cat-title">Matcha</h3>
+                <p class="cat-desc">Φρέσκο, «πράσινο» και aesthetic περιεχόμενο για matcha bars και healthy brands.</p>
+              </div>
+            </div>
+            <!-- 📸 Οι εικόνες φορτώνονται αυτόματα από τον φάκελο images/matcha/ -->
+            <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
+                 data-folder="images/matcha" data-title="Matcha" data-placeholders="6"></div>
+          </article>
+
+          <!-- ▸ Κατηγορία 03 — Coffee Shop -->
+          <article class="portfolio-category" id="cat-coffeeshop">
+            <div class="cat-header reveal">
+              <span class="cat-number" aria-hidden="true">03</span>
+              <div>
+                <h3 class="cat-title">Coffee Shop</h3>
+                <p class="cat-desc">Εμπνευσμένο από το δικό μου φανταστικό café brand — ζεστές, cozy δημιουργίες με άρωμα καφέ.</p>
+              </div>
+            </div>
+            <!-- 📸 Οι εικόνες φορτώνονται αυτόματα από τον φάκελο images/coffeeshop/ -->
+            <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
+                 data-folder="images/coffeeshop" data-title="Coffee Shop" data-placeholders="10"></div>
+          </article>
+
+          <!-- ▸ Κατηγορία 04 — Προϊόντα Ομορφιάς -->
+          <article class="portfolio-category" id="cat-beauty">
+            <div class="cat-header cat-header-right reveal">
+              <span class="cat-number" aria-hidden="true">04</span>
+              <div>
+                <h3 class="cat-title">Προϊόντα Ομορφιάς</h3>
+                <p class="cat-desc">Κομψά, φωτεινά visuals για brands ομορφιάς και περιποίησης — με premium αισθητική.</p>
+              </div>
+            </div>
+            <!-- 📸 Οι εικόνες φορτώνονται αυτόματα από τον φάκελο images/beauty/ -->
+            <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
+                 data-folder="images/beauty" data-title="Προϊόντα Ομορφιάς" data-placeholders="8"></div>
+          </article>
+
+          <!-- ▸ Κατηγορία 05 — Starbucks -->
+          <article class="portfolio-category" id="cat-starbucks">
+            <div class="cat-header reveal">
+              <span class="cat-number" aria-hidden="true">05</span>
+              <div>
+                <h3 class="cat-title">Starbucks</h3>
+                <p class="cat-desc">Concept σχέδια εμπνευσμένα από την αγαπημένη αλυσίδα καφέ — seasonal διαθέσεις &amp; χρώμα.</p>
+              </div>
+            </div>
+            <!-- 📸 Οι εικόνες φορτώνονται αυτόματα από τον φάκελο images/starbucks/ -->
+            <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
+                 data-folder="images/starbucks" data-title="Starbucks" data-placeholders="6"></div>
+          </article>
+
+          <!-- ▸ Κατηγορία 06 — Pilates Studio -->
+          <article class="portfolio-category" id="cat-pilates">
+            <div class="cat-header cat-header-right reveal">
+              <span class="cat-number" aria-hidden="true">06</span>
+              <div>
+                <h3 class="cat-title">Pilates Studio</h3>
+                <p class="cat-desc">Καθαρή, ήρεμη αισθητική για στούντιο pilates &amp; wellness — ισορροπία σε κάθε pixel.</p>
+              </div>
+            </div>
+            <!-- 📸 Οι εικόνες φορτώνονται αυτόματα από τον φάκελο images/pilates/ -->
+            <div class="gallery-grid grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
+                 data-folder="images/pilates" data-title="Pilates Studio" data-placeholders="7"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         ΔΕΞΙΟΤΗΤΕΣ — Skills
+         ============================================================== -->
+    <section id="skills" class="relative py-24 md:py-32 overflow-hidden">
+      <div class="orb w-[26rem] h-[26rem] top-10 -left-52 opacity-15"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <p class="kicker justify-center reveal">Τι κάνω καλά</p>
+          <h2 class="section-title reveal mt-4" data-delay="80">Δεξιότητες</h2>
+          <p class="reveal mt-5 text-white/60" data-delay="140">
+            Τα εργαλεία και οι ικανότητες που δίνουν ζωή σε κάθε δημιουργία.
+          </p>
+        </div>
+
+        <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: πρόσθεσε ή αφαίρεσε δεξιότητες -->
+          <div class="skill-card glass reveal">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-instagram"/></svg></span>
+            <h3>Περιεχόμενο Instagram</h3>
+            <p>Posts, Stories &amp; Reels</p>
+          </div>
+          <div class="skill-card glass reveal" data-delay="60">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-tiktok"/></svg></span>
+            <h3>Περιεχόμενο TikTok</h3>
+            <p>Βίντεο με ρυθμό &amp; trends</p>
+          </div>
+          <div class="skill-card glass reveal" data-delay="120">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-pen"/></svg></span>
+            <h3>Social Media Design</h3>
+            <p>Σχεδιασμός με στρατηγική</p>
+          </div>
+          <div class="skill-card glass reveal" data-delay="180">
+            <span class="icon-bubble tool-badge">C</span>
+            <h3>Canva</h3>
+            <p>Γρήγορος &amp; ευέλικτος σχεδιασμός</p>
+          </div>
+          <div class="skill-card glass reveal">
+            <span class="icon-bubble tool-badge">Ps</span>
+            <h3>Adobe Photoshop</h3>
+            <p>Επεξεργασία &amp; ρετούς</p>
+          </div>
+          <div class="skill-card glass reveal" data-delay="60">
+            <span class="icon-bubble tool-badge">Ai</span>
+            <h3>Adobe Illustrator</h3>
+            <p>Λογότυπα &amp; γραφικά</p>
+          </div>
+          <div class="skill-card glass reveal" data-delay="120">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-award"/></svg></span>
+            <h3>Εταιρική Ταυτότητα</h3>
+            <p>Brand identity που ξεχωρίζει</p>
+          </div>
+          <div class="skill-card glass reveal" data-delay="180">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-target"/></svg></span>
+            <h3>Στρατηγική Περιεχομένου</h3>
+            <p>Πλάνο με στόχο &amp; αποτέλεσμα</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         ΓΙΑΤΙ ΕΜΕΝΑ — Why Work With Me
+         ============================================================== -->
+    <section id="why" class="relative py-24 md:py-32 bg-[#121212] border-y border-white/5 overflow-hidden">
+      <div class="orb w-[28rem] h-[28rem] bottom-0 -right-56 opacity-15"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <p class="kicker justify-center reveal">Τα δυνατά μου σημεία</p>
+          <h2 class="section-title reveal mt-4" data-delay="80">
+            Γιατί να συνεργαστείς <span class="gradient-text">μαζί μου;</span>
+          </h2>
+        </div>
+
+        <div class="mt-16 grid md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6">
+          <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: λόγοι συνεργασίας -->
+          <div class="why-card glass reveal">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-sparkles"/></svg></span>
+            <h3>Δημιουργικά Σχέδια</h3>
+            <p>Φρέσκες ιδέες και μοναδικά visuals που κάνουν το brand σου να ξεχωρίζει από τον ανταγωνισμό.</p>
+          </div>
+          <div class="why-card glass reveal" data-delay="80">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-zap"/></svg></span>
+            <h3>Γρήγορη Παράδοση</h3>
+            <p>Ποιοτική δουλειά, πάντα στην ώρα της — γιατί ο χρόνος σου είναι πολύτιμος.</p>
+          </div>
+          <div class="why-card glass reveal" data-delay="160">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-eye"/></svg></span>
+            <h3>Προσοχή στη Λεπτομέρεια</h3>
+            <p>Κάθε pixel, κάθε χρώμα και κάθε γραμματοσειρά επιλέγονται με φροντίδα.</p>
+          </div>
+          <div class="why-card glass reveal">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-gem"/></svg></span>
+            <h3>Μοντέρνα Αισθητική</h3>
+            <p>Σχεδιασμός που ακολουθεί τα τελευταία trends και αναδεικνύει τον χαρακτήρα του brand σου.</p>
+          </div>
+          <div class="why-card glass reveal" data-delay="80">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-heart"/></svg></span>
+            <h3>Εξειδίκευση στα Social Media</h3>
+            <p>Ξέρω τι λειτουργεί σε Instagram &amp; TikTok — και το εφαρμόζω στο περιεχόμενό σου.</p>
+          </div>
+          <div class="why-card glass reveal" data-delay="160">
+            <span class="icon-bubble"><svg class="w-6 h-6"><use href="#i-chat"/></svg></span>
+            <h3>Επαγγελματική Επικοινωνία</h3>
+            <p>Άμεση ανταπόκριση, ξεκάθαρη συνεννόηση και συνεργασία χωρίς άγχος.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         ΕΠΙΚΟΙΝΩΝΙΑ — Contact
+         ============================================================== -->
+    <section id="contact" class="relative py-28 md:py-36 overflow-hidden">
+      <div class="orb w-[36rem] h-[36rem] -bottom-52 left-1/2 -translate-x-1/2 opacity-20"></div>
+
+      <div class="relative z-10 mx-auto max-w-5xl px-5 sm:px-8 text-center">
+        <p class="kicker justify-center reveal">Επικοινωνία</p>
+
+        <h2 class="reveal mt-5 font-extrabold leading-[1.02] text-[clamp(2.8rem,8vw,5.8rem)] text-white" data-delay="80">
+          Ας <span class="gradient-text">Συνεργαστούμε</span>
+        </h2>
+
+        <p class="reveal mt-6 text-white/60 max-w-xl mx-auto leading-relaxed" data-delay="140">
+          Έχεις μια ιδέα ή θέλεις να απογειώσεις τα social media της επιχείρησής σου;
+          Στείλε μου μήνυμα — θα χαρώ πολύ να τα πούμε!
+        </p>
+
+        <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: βάλε το πραγματικό email στο mailto -->
+        <a href="mailto:hello@georgia-design.gr" class="btn-primary btn-lg reveal mt-10" data-delay="200">
+          Στείλε μου Μήνυμα
+          <svg class="w-5 h-5" aria-hidden="true"><use href="#i-mail"/></svg>
+        </a>
+
+        <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: στοιχεία επικοινωνίας (placeholders) -->
+        <div class="mt-16 flex flex-wrap justify-center gap-4 md:gap-5 text-left">
+          <a href="https://instagram.com/georgia.design" target="_blank" rel="noopener" class="contact-card glass reveal">
+            <span class="icon-bubble"><svg class="w-5 h-5"><use href="#i-instagram"/></svg></span>
+            <span><small>Instagram</small><strong>@georgia.design</strong></span>
+          </a>
+          <a href="https://tiktok.com/@georgia.design" target="_blank" rel="noopener" class="contact-card glass reveal" data-delay="60">
+            <span class="icon-bubble"><svg class="w-5 h-5"><use href="#i-tiktok"/></svg></span>
+            <span><small>TikTok</small><strong>@georgia.design</strong></span>
+          </a>
+          <a href="mailto:hello@georgia-design.gr" class="contact-card glass reveal" data-delay="120">
+            <span class="icon-bubble"><svg class="w-5 h-5"><use href="#i-mail"/></svg></span>
+            <span><small>Email</small><strong>hello@georgia-design.gr</strong></span>
+          </a>
+          <a href="tel:+306901234567" class="contact-card glass reveal" data-delay="180">
+            <span class="icon-bubble"><svg class="w-5 h-5"><use href="#i-phone"/></svg></span>
+            <span><small>Τηλέφωνο</small><strong>+30 690 123 4567</strong></span>
+          </a>
+          <span class="contact-card glass reveal" data-delay="240">
+            <span class="icon-bubble"><svg class="w-5 h-5"><use href="#i-pin"/></svg></span>
+            <span><small>Τοποθεσία</small><strong>Αθήνα, Ελλάδα</strong></span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER — μινιμαλιστικό υποσέλιδο
+       ================================================================ -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="#hero" class="text-xl font-extrabold text-white">Γεωργία<span class="text-brand">.</span></a>
+
+      <p class="text-sm text-white/45 text-center">
+        © <span id="year">2026</span> Γεωργία — Με επιφύλαξη παντός δικαιώματος.
+      </p>
+
+      <!-- ✏️ ΑΛΛΑΞΕ ΕΔΩ: σύνδεσμοι social στο footer -->
+      <div class="flex items-center gap-3">
+        <a href="https://instagram.com/georgia.design" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+          <svg class="w-5 h-5"><use href="#i-instagram"/></svg>
+        </a>
+        <a href="https://tiktok.com/@georgia.design" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">
+          <svg class="w-5 h-5"><use href="#i-tiktok"/></svg>
+        </a>
+        <a href="mailto:hello@georgia-design.gr" class="social-btn" aria-label="Email">
+          <svg class="w-5 h-5"><use href="#i-mail"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="mt-6 text-center text-xs text-white/30">
+      Σχεδιασμένο με <span class="text-brand">♥</span> για δημιουργικά brands
+    </p>
+  </footer>
+
+  <!-- Κουμπί «πίσω στην κορυφή» -->
+  <button id="to-top" class="glass" aria-label="Επιστροφή στην κορυφή">
+    <svg class="w-5 h-5"><use href="#i-arrow-up"/></svg>
+  </button>
+
+  <!-- ================================================================
+       LIGHTBOX — προβολή εικόνων με πλοήγηση
+       ================================================================ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Προβολή εικόνας" aria-hidden="true">
+    <div class="lightbox-backdrop" data-lb-close></div>
+
+    <button class="lb-btn lb-close" data-lb-close aria-label="Κλείσιμο προβολής">
+      <svg class="w-5 h-5"><use href="#i-x"/></svg>
+    </button>
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Προηγούμενη εικόνα">
+      <svg class="w-5 h-5"><use href="#i-chev-l"/></svg>
+    </button>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Επόμενη εικόνα">
+      <svg class="w-5 h-5"><use href="#i-chev-r"/></svg>
+    </button>
+
+    <figure class="lightbox-stage">
+      <div id="lb-content" class="lb-content"></div>
+      <figcaption class="lb-caption">
+        <span id="lb-title" class="font-semibold text-white"></span>
+        <span id="lb-counter" class="text-white/50"></span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Κύριο JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

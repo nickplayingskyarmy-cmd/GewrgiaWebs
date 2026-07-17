@@ -1,0 +1,16 @@
+{
+  "name": "georgia-portfolio",
+  "version": "1.0.0",
+  "description": "Premium portfolio για τη Γεωργία — Social Media Content Creator & Graphic Designer",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/tailwind.css -o css/tailwind.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i src/tailwind.css -o css/tailwind.css --watch",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "@fontsource/manrope": "^5.2.8",
+    "@fontsource/montserrat": "^5.2.8",
+    "tailwindcss": "^3.4.17"
+  }
+}
