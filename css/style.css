@@ -701,6 +701,44 @@ body.menu-open { overflow: hidden; }
 }
 .contact-card strong { font-size: 0.95rem; font-weight: 700; color: #fff; }
 .contact-card .icon-bubble { width: 2.9rem; height: 2.9rem; border-radius: 0.9rem; }
+
+/* Κάρτα με μεγάλη τιμή (π.χ. email) — να χωράει άνετα και σε κινητό */
+.contact-card-wide { max-width: 100%; }
+/* break-word (όχι anywhere): προτιμά το σημείο <wbr> πριν το @
+   αντί να κόβει το email στη μέση μιας λέξης */
+.contact-card-wide strong { overflow-wrap: break-word; }
+@media (max-width: 480px) {
+  .contact-card-wide strong { font-size: 0.8rem; letter-spacing: -0.01em; }
+}
+
+/* Σε πολύ στενές οθόνες (παλιά/μικρά κινητά) η λέξη «Συνεργαστούμε» δεν
+   χωράει στο clamp του τίτλου — τη μικραίνουμε λίγο ώστε να μην κόβεται. */
+@media (max-width: 380px) {
+  #contact h2 { font-size: 2.2rem; }
+}
+
+/* Στατιστικά («6+ / 45+ / 100%»): σε μικρά κινητά οι τρεις στήλες γίνονται
+   πολύ στενές και τα νούμερα/ετικέτες ξεχείλιζαν. Μικραίνουμε αναλογικά. */
+@media (max-width: 420px) {
+  .stats-grid { gap: 0.5rem; }
+  .stats-grid > div > p:first-child { font-size: 1.5rem; }
+  .stat-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Σπάει τη σειρά των καρτών σε 2+2 όταν υπάρχει χώρος.
+   Σε κινητό δεν χρειάζεται — οι κάρτες στοιβάζονται ούτως ή άλλως. */
+.contact-row-break { display: none; }
+@media (min-width: 768px) {
+  .contact-row-break {
+    display: block;
+    flex-basis: 100%;
+    height: 0;
+    margin: 0;
+  }
+}
 .contact-card:hover {
   transform: translateY(-5px);
   border-color: rgba(255, 79, 163, 0.5);
